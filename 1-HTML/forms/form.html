@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="index.php" method="GET">
+  
+      <p>Username: <input type="text" placeholder="your username" /></p>
+
+      <div>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          placeholder="Username"
+          id="username"
+          name="username" />
+          </div>
+          <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          placeholder="Age"
+          id="age"
+          name="age" />
+        </div>
+
+      <!-- Radio -->
+      <label for="under18">Under18</label>
+      <input type="radio" id="under18" name="age" value="u18" />
+      <label for="over18">Over18</label>
+      <input type="radio" id="over18" name="age" value="o18" />
+
+<!--       <p>Under 18:<input type="radio" name="age" value="u18" /></p>
+      <p>Over 18:<input type="radio" name="age" value="o18" /></p>
+       -->
+
+      <!-- Checkbox -->
+       <div>
+        
+       
+      <label for="ntext">news letter text</label>
+      <input type="checkbox" id="ntext" name="ntext" value="text" name="newsletter[]"/>
+      <label for="nhtml">news letter html</label>
+      <input type="checkbox" id="nhtml" name="nhtml" value="html" name="newsletter[]"/>
+    </div>
+      <p>
+        Favourite food:
+        <select>
+          <option>Pizza</option>
+          <option selected>Gelato</option>
+          <option>Sandwiches</option>
+        </select>
+      </p>
+
+      <p>
+        <input type="submit" value="Invia" />
+        <input type="reset" value="Reset" />
+        <button type="button">SEND</button>
+      </p>
+    </form>
+  </body>
+</html>
