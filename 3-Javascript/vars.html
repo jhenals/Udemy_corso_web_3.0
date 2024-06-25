@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript variables</title>
+
+  <script>
+    var name = "John Doe";
+    var age = 25;
+    var isMarried = false;
+    var height = 5.7;
+    var weight = 70;
+    var address = "123 Main Street";
+    var city = "Nairobi";
+    var country = "Kenya";
+    var phone = "0712345678";
+    var email = "johndoe@example.com"
+
+    var ageInTwoYears = age + 2;
+    console.log(name +"'s age in two years: " + ageInTwoYears);
+
+    // javascript 2015 : let and const
+
+    const PI = 3.142; //valore non si può cambiare
+    
+    {
+      let x = 10;
+      console.log(x);
+    }
+
+    //console.log(x) //ERROR : x is not defined outside the block scope because it was declared using let
+    //var is function scoped while let is block scoped
+    //even if we declare x using var, it will be accessible outside the block scope and at the top of the function
+  
+    //GOOD PRACTICE: 
+    //use const for values that will not change
+    //let for values that will change in a block scope
+    //var for values that will change in a function scope / global scope in Javascript
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
